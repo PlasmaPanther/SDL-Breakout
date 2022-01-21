@@ -37,7 +37,7 @@ void Player::Update() {
 		StateMachine::switchState(GameOverState::GetInstance());
 	}
 
-	Player_Rect = m_Player.GetRect();
+	Player_Rect = m_Player.GetRect(); //Keep tracking player position
 }
 
 void Player::Render() {
