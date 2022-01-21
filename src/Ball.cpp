@@ -14,7 +14,7 @@ void Ball::PlaceBall() {
 	locked = true;
 	speed_changed = false; //Will be used to speed up the ball like in the classic
 
-	m_Ball.PlaceCircle(Vector2(ball_collider.x = player_rect.x + player_rect.w / 2, ball_collider.y = player_rect.y - 16), 14); //place ball_collider ontop of the paddle
+	m_Ball.PlaceCircle(Vector2(ball_collider.x = player_rect.x + player_rect.w / 2, ball_collider.y = player_rect.y - 16), 14); //place ball ontop of the paddle
 
 	ball_collider = m_Ball.GetCircle(); //Gets Shape2D Circle
 
